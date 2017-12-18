@@ -1,0 +1,11 @@
+@import 'package:angular_components/css/material/material';
+@import 'package:angular_components/css/material/shadow';
+
+.jobs {
+  @include shadow-elevation;
+}
+
+.job {
+  padding: $mat-grid * 2;
+  border-bottom: 1px solid $mat-border-light;
+}

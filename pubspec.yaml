@@ -1,0 +1,19 @@
+name: trive_web
+description: AngularDart UI for the central server.
+
+dependencies:
+  angular: 5.0.0-alpha+1
+  angular_components: 0.9.0-alpha+1
+  angular_forms: 1.0.1-alpha+1
+  sass_builder: ^1.0.0
+
+transformers:
+  - sass_builder
+  - angular:
+      entry_points: web/main.dart
+  - $dart2js:
+      commandLineOptions: [--trust-type-annotations, --trust-primitives, --show-package-warnings, --dump-info]
+
+web:
+  compiler:
+    debug: dartdevc

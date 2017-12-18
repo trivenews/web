@@ -1,0 +1,10 @@
+@import 'package:angular_components/css/material/material';
+@import 'package:angular_components/css/material/shadow';
+
+.shadow {
+  @include shadow-elevation;
+}
+
+.panes {
+  display: flex;
+}
